@@ -51,6 +51,13 @@
             font-size: 0.85rem;
             text-align: center;
             border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .header-info {
@@ -198,19 +205,16 @@
 <body>
 <div class="container">
 
-    <!-- Header with photo placeholder -->
+    <!-- Header with photo -->
     <div class="header">
         <div class="photo-placeholder">
-            [Your Photo]<br>Add profile.jpg
+            <img src="profile.jpg" alt="Barmak Honarvar" onerror="this.parentElement.innerHTML='[Your Photo]<br>Add profile.jpg'">
         </div>
         <div class="header-info">
             <h1>Barmak Honarvar</h1>
             <p><strong>Assistant Professor (Lecturer) in Digital Signal and Image Processing</strong><br>
             Centre for Life-cycle Engineering and Management, Cranfield University</p>
             <p><span class="contact">📧 barmak.honarvar@ieee.org</span></p>
-            <div class="end-note">
-                ⚠️ Current appointment at Cranfield University ends <strong>31 March 2026</strong>.
-            </div>
         </div>
     </div>
 
@@ -224,18 +228,18 @@
     <section>
         <h2>Education</h2>
         <ul>
-            <li><strong>PhD in Electrical Engineering (Digital Signal and Image Processing)</strong> | 2009–2013<br>University of Malaya, Malaysia<br>Thesis: Digital Filter Implementation of Discrete Orthogonal Moments and Image Reconstruction From Non-Orthogonal Moments<br>Examiners: Prof. Rama Chellappa (UMD) &amp; Prof. Nasser Kehtarnavaz (UT Dallas)</li>
-            <li><strong>MSc in Electrical Engineering (Power and Control Systems)</strong> | 1995–1998<br>Tabriz University, Iran</li>
-            <li><strong>BSc in Electrical Engineering (Telecommunication)</strong> | 1991–1995<br>Azad University of Urmia, Iran</li>
+            <li><strong>PhD in Electrical Engineering (Digital Signal and Image Processing)</strong> | 2009–2013<br>University of Malaya, Kuala Lumpur, Malaysia<br>Thesis: Digital Filter Implementation of Discrete Orthogonal Moments and Image Reconstruction From Non-Orthogonal Moments<br>Examiners: Prof. Rama Chellappa (UMD) &amp; Prof. Nasser Kehtarnavaz (UT Dallas)</li>
+            <li><strong>MSc in Electrical Engineering (Power and Control Systems)</strong> | 1995–1998<br>Tabriz University, Tabriz, Iran</li>
+            <li><strong>BSc in Electrical Engineering (Telecommunication)</strong> | 1991–1995<br>Azad University of Urmia, Urmia, Iran</li>
         </ul>
     </section>
 
-    <!-- Academic Appointments (with March 2026 end date) -->
+    <!-- Academic Appointments -->
     <section>
         <h2>Academic Appointments</h2>
         <div class="job-entry">
             <span class="job-title">Assistant Professor (Lecturer) in Digital Signal and Image Processing</span><br>
-            Centre for Life-cycle Engineering and Management, Cranfield University, UK &nbsp;|&nbsp; <strong>2022 – 31 March 2026</strong>
+            Centre for Life-cycle Engineering and Management, Cranfield University, UK &nbsp;|&nbsp; 2022 – 31 March 2026
             <ul style="margin-top: 0.3rem;">
                 <li>Lead and deliver core postgraduate modules: Digital Signal Processing (DSP) (Module Leader), Signal Analysis, and Information Management, achieving consistently high student feedback scores (&gt;4.5/5).</li>
                 <li>Established a new research programme in AI-driven image processing and machine learning for medical diagnostics and industrial asset management.</li>
@@ -339,7 +343,7 @@
         </ul>
     </section>
 
-    <!-- Media / Public Engagement including Faculti note -->
+    <!-- Media & Public Engagement -->
     <section>
         <h2>Media &amp; Public Engagement</h2>
         <ul>
@@ -398,7 +402,7 @@
     </section>
 
     <footer>
-        © Barmak Honarvar | Last updated: April 2026 | Hosted on GitHub Pages
+        © Barmak Honarvar | Last updated: May 2026
     </footer>
 </div>
 </body>
