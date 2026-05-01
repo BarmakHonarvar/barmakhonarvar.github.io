@@ -12,182 +12,164 @@
         }
 
         body {
-            font-family: 'Segoe UI', 'Georgia', Times, serif;
-            line-height: 1.5;
-            color: #111;
-            background-color: #fafafa;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Georgia', serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f5f5f0;
             padding: 2rem 1rem;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             background: white;
-            padding: 2.5rem 2.8rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border-radius: 4px;
+            padding: 2.5rem 3rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
         }
 
-        /* Header section */
+        /* Header */
         .header {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
-            margin-bottom: 2rem;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
             padding-bottom: 1.5rem;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #e0e0e0;
         }
 
-        .photo-placeholder {
+        .photo {
             flex-shrink: 0;
-            width: 160px;
-            height: 160px;
-            background-color: #e0e0e0;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: 0.85rem;
-            text-align: center;
-            border: 1px solid #ccc;
-            overflow: hidden;
-        }
-
-        .photo-placeholder img {
-            width: 100%;
-            height: 100%;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
             object-fit: cover;
-        }
-
-        .header-info {
-            flex: 1;
+            background: #e0e0e0;
         }
 
         .header-info h1 {
             font-size: 2.2rem;
-            font-weight: 500;
-            margin-bottom: 0.25rem;
-            color: #1a3e6f;
+            font-weight: 450;
+            color: #2c3e66;
+            margin-bottom: 0.5rem;
         }
 
-        .header-info p {
-            margin: 0.3rem 0;
-            color: #2c5282;
+        .header-info .title {
+            font-size: 1.1rem;
+            color: #4a6a8e;
+            margin-bottom: 0.5rem;
         }
 
-        .contact {
-            margin-top: 0.75rem;
+        .header-info .affiliation {
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            margin-top: 0.8rem;
             font-family: monospace;
-            background: #f5f5f5;
-            padding: 0.4rem 0.6rem;
-            display: inline-block;
-            border-radius: 4px;
             font-size: 0.9rem;
+            color: #2c3e66;
+        }
+
+        /* Navigation */
+        nav {
+            margin: 1.5rem 0 2rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        nav a {
+            margin-right: 1.8rem;
+            text-decoration: none;
+            color: #4a6a8e;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #2c3e66;
+            text-decoration: underline;
         }
 
         /* Sections */
         section {
-            margin: 2rem 0 1.8rem;
+            margin: 2.2rem 0;
         }
-
         h2 {
-            font-size: 1.6rem;
-            font-weight: 500;
-            border-bottom: 2px solid #1a3e6f;
-            padding-bottom: 0.2rem;
+            font-size: 1.5rem;
+            font-weight: 450;
+            color: #2c3e66;
+            border-bottom: 1px solid #c0c0c0;
+            padding-bottom: 0.3rem;
             margin-bottom: 1rem;
-            color: #1a3e6f;
         }
-
         h3 {
             font-size: 1.2rem;
             font-weight: 500;
             margin: 1rem 0 0.5rem;
-            color: #2c5282;
+            color: #4a6a8e;
         }
-
-        ul, .pub-list {
-            margin-left: 1.5rem;
-            margin-bottom: 0.8rem;
+        ul {
+            margin-left: 1.8rem;
+            margin-bottom: 1rem;
         }
-
         li {
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.4rem;
         }
-
-        .job-entry, .grant-entry, .pub-entry {
-            margin-bottom: 0.7rem;
+        .pub-item {
+            margin-bottom: 0.6rem;
         }
-
-        .job-title {
-            font-weight: 600;
+        .pub-title {
+            font-weight: 500;
         }
-
-        .date {
+        .pub-authors {
             color: #555;
-            font-size: 0.85rem;
-            margin-left: 0.5rem;
+            font-size: 0.92rem;
         }
-
-        .end-note {
-            background: #fff3e0;
-            padding: 0.3rem 0.6rem;
-            border-left: 4px solid #e67e22;
-            font-size: 0.85rem;
-            margin-top: 0.3rem;
+        .pub-journal {
+            font-style: italic;
+            color: #2c3e66;
+            font-size: 0.92rem;
         }
-
         .grant-table {
             width: 100%;
             border-collapse: collapse;
             margin: 1rem 0;
             font-size: 0.9rem;
         }
-
         .grant-table th, .grant-table td {
-            border: 1px solid #ccc;
-            padding: 8px 10px;
+            border: 1px solid #ddd;
+            padding: 0.6rem 0.8rem;
             text-align: left;
             vertical-align: top;
         }
-
         .grant-table th {
-            background-color: #f0f0f0;
+            background: #f0f0f0;
             font-weight: 600;
         }
-
-        .skills-grid {
+        .two-columns {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
             margin-top: 0.5rem;
         }
-
-        .skills-col {
+        .col {
             flex: 1;
-            min-width: 180px;
+            min-width: 200px;
         }
-
         footer {
             margin-top: 2.5rem;
             padding-top: 1rem;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #e0e0e0;
             font-size: 0.8rem;
-            color: #666;
+            color: #888;
             text-align: center;
         }
-
         a {
-            color: #1a3e6f;
+            color: #2c3e66;
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
-        @media (max-width: 650px) {
+        @media (max-width: 700px) {
             .container {
                 padding: 1.5rem;
             }
@@ -195,9 +177,6 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-            }
-            .grant-table {
-                font-size: 0.75rem;
             }
         }
     </style>
@@ -207,197 +186,164 @@
 
     <!-- Header with photo -->
     <div class="header">
-        <div class="photo-placeholder">
-            <img src="profile.jpg" alt="Barmak Honarvar" onerror="this.parentElement.innerHTML='[Your Photo]<br>Add profile.jpg'">
-        </div>
+        <img src="profile.jpg" alt="Barmak Honarvar" class="photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
         <div class="header-info">
             <h1>Barmak Honarvar</h1>
-            <p><strong>Assistant Professor (Lecturer) in Digital Signal and Image Processing</strong><br>
-            Centre for Life-cycle Engineering and Management, Cranfield University</p>
-            <p><span class="contact">📧 barmak.honarvar@ieee.org</span></p>
+            <div class="title">Assistant Professor (Lecturer) in Digital Signal and Image Processing</div>
+            <div class="affiliation">Centre for Life-cycle Engineering and Management, Cranfield University</div>
+            <div class="contact-info">📧 barmak.honarvar@ieee.org</div>
         </div>
     </div>
 
-    <!-- Profile / Biography -->
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#grants">Grants</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Profile -->
     <section>
-        <h2>Academic Profile</h2>
-        <p>Senior Member IEEE & OPTICA | AFHEA | Assistant Professor (Lecturer) with a distinguished track record in digital signal and image processing, machine learning, and medical imaging. Proven leadership as Principal Investigator managing £1.3M+ in research funding from EPSRC, UKRI, GACR, and dstl/ASTRID. Published in top-tier journals (<em>Automatica, IEEE Access, Information Sciences</em>) with 40+ peer-reviewed articles. Extensive teaching experience across undergraduate and postgraduate levels, supervising 1 PhD to completion, 4 current PhD students, and 40+ MSc projects. Committed to securing research income, developing innovative curricula, and advancing AI-driven solutions for healthcare and industrial applications.</p>
+        <h2>Profile</h2>
+        <p>I am a Senior Member of IEEE and OPTICA, and an Associate Fellow of the Higher Education Academy (AFHEA). My research focuses on digital signal and image processing, machine learning, and medical imaging. I have served as Principal Investigator on grants totalling over £1.3M from EPSRC, UKRI, GACR, and dstl/ASTRID. I have published over 40 peer-reviewed articles in journals including <em>Automatica</em>, <em>IEEE Access</em>, and <em>Information Sciences</em>.</p>
+        <p style="margin-top: 0.8rem;">I currently teach Digital Signal Processing, Signal Analysis, and Information Management at postgraduate level, and I supervise PhD students in machine health diagnostics, structural health monitoring, and AI for medical imaging.</p>
     </section>
 
     <!-- Education -->
     <section>
         <h2>Education</h2>
         <ul>
-            <li><strong>PhD in Electrical Engineering (Digital Signal and Image Processing)</strong> | 2009–2013<br>University of Malaya, Kuala Lumpur, Malaysia<br>Thesis: Digital Filter Implementation of Discrete Orthogonal Moments and Image Reconstruction From Non-Orthogonal Moments<br>Examiners: Prof. Rama Chellappa (UMD) &amp; Prof. Nasser Kehtarnavaz (UT Dallas)</li>
-            <li><strong>MSc in Electrical Engineering (Power and Control Systems)</strong> | 1995–1998<br>Tabriz University, Tabriz, Iran</li>
-            <li><strong>BSc in Electrical Engineering (Telecommunication)</strong> | 1991–1995<br>Azad University of Urmia, Urmia, Iran</li>
+            <li><strong>PhD in Electrical Engineering</strong>, University of Malaya, Malaysia (2009–2013)<br>Digital Filter Implementation of Discrete Orthogonal Moments</li>
+            <li><strong>MSc in Electrical Engineering</strong>, Tabriz University, Iran (1995–1998)</li>
+            <li><strong>BSc in Electrical Engineering</strong>, Azad University of Urmia, Iran (1991–1995)</li>
         </ul>
     </section>
 
     <!-- Academic Appointments -->
     <section>
         <h2>Academic Appointments</h2>
-        <div class="job-entry">
-            <span class="job-title">Assistant Professor (Lecturer) in Digital Signal and Image Processing</span><br>
-            Centre for Life-cycle Engineering and Management, Cranfield University, UK &nbsp;|&nbsp; 2022 – 31 March 2026
-            <ul style="margin-top: 0.3rem;">
-                <li>Lead and deliver core postgraduate modules: Digital Signal Processing (DSP) (Module Leader), Signal Analysis, and Information Management, achieving consistently high student feedback scores (&gt;4.5/5).</li>
-                <li>Established a new research programme in AI-driven image processing and machine learning for medical diagnostics and industrial asset management.</li>
-                <li>Principal Investigator for a UKRI proposal (£546k, under review) on AI-based early breast cancer detection.</li>
-                <li>Supervise 2 PhD students and have successfully graduated 1 PhD as lead supervisor; co-supervise 2 additional PhD candidates.</li>
-                <li>Serve as MEAM Deputy Course Director, contributing to programme strategy and quality assurance.</li>
-            </ul>
-        </div>
-        <div class="job-entry">
-            <span class="job-title">Senior Research Fellow &amp; Project Manager</span><br>
-            School of Aerospace, Transport and Manufacturing, Cranfield University, UK &nbsp;|&nbsp; 2018–2022
-            <ul><li>Project Manager for EPSRC grant "Distributed Intelligent Ultrasound Imaging System" (£1.3M), managing multi-disciplinary team and stakeholders.</li>
-            <li>Principal Investigator for GACR grant (£65,000) and dstl/ASTRID grant (£8,000).</li>
-            <li>Supervised 2 PhD students to completion.</li></ul>
-        </div>
-        <div class="job-entry">
-            <span class="job-title">Postdoctoral Research Fellow</span><br>
-            Institute of Information Theory and Automation (UTIA), Prague, Czech Republic &nbsp;|&nbsp; 2015–2018
-            <ul><li>Research on discrete orthogonal moments, image reconstruction, collaboration with Prof. Jan Flusser.</li>
-            <li>Co-supervised 2 PhD students.</li></ul>
-        </div>
-        <div class="job-entry">
-            <span class="job-title">Lecturer / Senior Lecturer &amp; Head of Department</span><br>
-            Department of Electrical Engineering, Azad University of Urmia, Iran &nbsp;|&nbsp; 1998–2009
-            <ul><li>Head of Department (2007–2009): curriculum development, faculty management.</li>
-            <li>Supervised 80+ undergraduate dissertations; received Best State Award for Teaching (2002) and National Award for Patent (2007).</li></ul>
-        </div>
+        <ul>
+            <li><strong>Assistant Professor</strong>, Cranfield University (2022 – 31 March 2026)</li>
+            <li><strong>Senior Research Fellow &amp; Project Manager</strong>, Cranfield University (2018–2022)</li>
+            <li><strong>Postdoctoral Research Fellow</strong>, UTIA, Prague (2015–2018)</li>
+            <li><strong>Lecturer / Head of Department</strong>, Azad University of Urmia (1998–2009)</li>
+        </ul>
     </section>
 
-    <!-- Research Grants & Funding -->
-    <section>
-        <h2>Research Grants &amp; Funding</h2>
+    <!-- Research Grants -->
+    <section id="grants">
+        <h2>Research Grants</h2>
         <table class="grant-table">
-            <thead>
-                <tr><th>Grant Title</th><th>Funder</th><th>Role</th><th>Amount</th></tr>
-            </thead>
+            <thead><tr><th>Title</th><th>Funder</th><th>Role</th><th>Amount</th></tr></thead>
             <tbody>
-                <tr><td>Unique AI Imaging Model for Early Breast Cancer Detection (APP24071)</td><td>UKRI</td><td>Principal Investigator</td><td>£546,000 (Under Review)</td></tr>
-                <tr><td>Machine Learning for Passive Sonar: Short Investigations</td><td>dstl/ASTRID</td><td>Principal Investigator</td><td>£8,000 (2022)</td></tr>
-                <tr><td>The use of orthogonal moments in image processing (18-26018Y)</td><td>Czech Science Foundation (GACR)</td><td>Principal Investigator</td><td>€65,000 (2018–2021)</td></tr>
-                <tr><td>Distributed Intelligent Ultrasound Imaging System (SecureUltrasound)</td><td>EPSRC</td><td>Project Manager / Co-I</td><td>£1,300,000 (2018–2021)</td></tr>
-                <tr><td>Department of Image Processing Research Fellowship</td><td>UTIA, Czech Republic</td><td>Research Fellow</td><td>Fully Funded (2015–2017)</td></tr>
+                <tr><td>Unique AI Imaging Model for Early Breast Cancer Detection</td><td>UKRI</td><td>PI</td><td>£546,000 (Under Review)</td></tr>
+                <tr><td>Machine Learning for Passive Sonar</td><td>dstl/ASTRID</td><td>PI</td><td>£8,000 (2022)</td></tr>
+                <tr><td>The use of orthogonal moments in image processing</td><td>Czech Science Foundation</td><td>PI</td><td>€65,000 (2018–2021)</td></tr>
+                <tr><td>Distributed Intelligent Ultrasound Imaging System</td><td>EPSRC</td><td>Project Manager</td><td>£1,300,000 (2018–2021)</td></tr>
             </tbody>
         </table>
     </section>
 
-    <!-- Selected Publications -->
-    <section>
+    <!-- Publications -->
+    <section id="publications">
         <h2>Selected Publications</h2>
-        <p><em>Journal articles (impact factor &gt;2.5)</em></p>
-        <div class="pub-entry">L. Yang, <strong>B. Honarvar Shakibaei Asli</strong>, "MSconv-YOLO: An improved small target detection algorithm based on YOLOv8," <em>Journal of Imaging</em>, 11(8), 285, 2025. (IF=3.3)</div>
-        <div class="pub-entry">K.W. Kim, W. Jin, <strong>B. Honarvar Shakibaei Asli</strong>, "Filter-based Tchebichef moment analysis for whole slide image reconstruction," <em>Electronics</em>, 14(15), 3148, 2025. (IF=2.6)</div>
-        <div class="pub-entry">Z. Azouz, <strong>B. Honarvar Shakibaei Asli</strong>, M. Khan, "Potential of non-contact dynamic response measurements for predicting small size or hidden damages in highly damped structures," <em>Sensors</em>, 24(18), 5871, 2024. (IF=3.4)</div>
-        <div class="pub-entry"><strong>B. Honarvar Shakibaei Asli</strong>, J. Flusser, Y. Zhao, J.A. Erkowuncu, K. Banerjee Krishnan, Y. Farrokhi, R. Roy, "Ultrasound image filtering and reconstruction using DCT/IDCT filter structure," <em>IEEE Access</em>, 8, 141342–141357, 2020. (IF=3.745)</div>
-        <div class="pub-entry"><strong>B.H.S. Asli</strong>, J. Flusser, Y. Zhao, J.A. Erkowuncu, "Filter-generating system of Zernike polynomials," <em>Automatica</em>, 108, 108498, 2019. <strong>(Best Paper Award, Czech Academy of Sciences)</strong> (IF=6.355)</div>
-        <div class="pub-entry"><strong>B.H.S. Asli</strong>, R. Paramesran, "Fast computation of Krawtchouk moments," <em>Information Sciences</em>, 288, 73–86, 2014. (IF=5.524)</div>
-        <div class="pub-entry">C.-L. Lim, <strong>B. Honarvar</strong>, K.-H. Thung, R. Paramesran, "Fast computation of exact Zernike moments using cascaded digital filters," <em>Information Sciences</em>, 181(17), 3638–3651, 2011. (IF=5.525)</div>
-        
-        <p style="margin-top: 1rem;"><em>Peer-reviewed conference proceedings</em></p>
-        <div class="pub-entry"><strong>B.H. Shakibaei Asli</strong>, J. Flusser, Y. Zhao, J.A. Erkoyuncu, R. Roy, "DCT/IDCT filter design for ultrasound image filtering," <em>25th ICPR</em>, 1804–1811, 2021.</div>
-        <div class="pub-entry"><strong>B.H. Shakibaei Asli</strong>, J. Flusser, Y. Zhao, "2-D generating function of the Zernike polynomials and their application for image classification," <em>9th IPTA</em>, 1–6, 2019.</div>
-        <div class="pub-entry"><strong>B.H. Shakibaei Asli</strong>, "New moment functions for signal and image analysis," <em>5th ASPAI</em>, Tenerife, Spain, 2023.</div>
+        <div class="pub-item">
+            <div class="pub-title">MSconv-YOLO: An improved small target detection algorithm based on YOLOv8</div>
+            <div class="pub-authors">L. Yang, <strong>B. Honarvar Shakibaei Asli</strong></div>
+            <div class="pub-journal">Journal of Imaging, 11(8), 285, 2025</div>
+        </div>
+        <div class="pub-item">
+            <div class="pub-title">Filter-based Tchebichef moment analysis for whole slide image reconstruction</div>
+            <div class="pub-authors">K.W. Kim, W. Jin, <strong>B. Honarvar Shakibaei Asli</strong></div>
+            <div class="pub-journal">Electronics, 14(15), 3148, 2025</div>
+        </div>
+        <div class="pub-item">
+            <div class="pub-title">Ultrasound image filtering and reconstruction using DCT/IDCT filter structure</div>
+            <div class="pub-authors"><strong>B. Honarvar Shakibaei Asli</strong>, J. Flusser, Y. Zhao, et al.</div>
+            <div class="pub-journal">IEEE Access, 8, 141342–141357, 2020</div>
+        </div>
+        <div class="pub-item">
+            <div class="pub-title">Filter-generating system of Zernike polynomials</div>
+            <div class="pub-authors"><strong>B.H.S. Asli</strong>, J. Flusser, Y. Zhao, J.A. Erkowuncu</div>
+            <div class="pub-journal">Automatica, 108, 108498, 2019 <strong>🏆 Best Paper Award</strong></div>
+        </div>
+        <div class="pub-item">
+            <div class="pub-title">Fast computation of Krawtchouk moments</div>
+            <div class="pub-authors"><strong>B.H.S. Asli</strong>, R. Paramesran</div>
+            <div class="pub-journal">Information Sciences, 288, 73–86, 2014</div>
+        </div>
     </section>
 
-    <!-- Editorial Roles -->
-    <section>
-        <h2>Editorial Roles</h2>
-        <ul><li><strong>Guest Editor</strong>, <em>Electronics</em> (MDPI, IF=2.6), 2023–Present – managing three Special Issues.</li></ul>
-    </section>
-
-    <!-- Teaching & Supervision -->
-    <section>
+    <!-- Teaching -->
+    <section id="teaching">
         <h2>Teaching &amp; Supervision</h2>
-        <h3>Module Leadership</h3>
         <ul>
-            <li>Digital Signal Processing (DSP) – Cranfield University (2018–Present)</li>
-            <li>Signal Analysis – Cranfield University (2022–Present)</li>
-            <li>Information Management – Cranfield University (2022–Present)</li>
+            <li><strong>Module Leader:</strong> Digital Signal Processing, Signal Analysis, Information Management (Cranfield)</li>
+            <li><strong>PhD Supervision:</strong> 1 completed (lead), 4 current, 4 previous co-supervision</li>
+            <li><strong>MSc Projects:</strong> 40+ dissertations supervised</li>
         </ul>
-        <h3>PhD Supervision</h3>
-        <ul>
-            <li>Completed as Lead Supervisor: 1 PhD (Cranfield)</li>
-            <li>Current: 2 PhD (Lead), 2 PhD (Co-supervisor)</li>
-            <li>Previous co-supervision: 2 PhD (UTIA), 2 PhD (Malaya)</li>
-        </ul>
-        <h3>MSc Project Supervision</h3>
-        <ul><li>40+ MSc dissertations at Cranfield (2018–Present), multiple leading to journal publications.</li></ul>
-        <h3>Previous Teaching</h3>
-        <ul><li>University of Malaya, Czech University of Life Sciences, Lincoln University College, Payame Noor University, University of Urmia.</li></ul>
     </section>
 
-    <!-- Honors & Awards -->
+    <!-- Honors -->
     <section>
         <h2>Honors &amp; Awards</h2>
         <ul>
-            <li><strong>Best Paper Award (2019)</strong> – Czech Academy of Sciences (Automatica, IF Q1)</li>
-            <li><strong>dstl Grant (2022)</strong> – £8,000 for "Machine Learning for Passive Sonar"</li>
-            <li><strong>Czech Science Foundation Grant (2018–2021)</strong> – Principal Investigator, €65,000</li>
-            <li><strong>National Award for Patent (2007)</strong> – "Electricity Energy Generating via Automobile Moving", Iran</li>
-            <li><strong>Best State Award for Undergraduate Teaching (2002)</strong> – Islamic Azad University, Urmia</li>
-        </ul>
-    </section>
-
-    <!-- Media & Public Engagement -->
-    <section>
-        <h2>Media &amp; Public Engagement</h2>
-        <ul>
-            <li><strong>Interview with Faculti (18 February 2026)</strong> – The video is pending publication. Multiple follow-ups with Manager Diana Matthews (diana.matthews@faculti.net) and interviewer Gaston Flores (gaston.flores@facultisupport.com) have consistently received the response: "It should be live soon."</li>
+            <li>Best Paper Award, Czech Academy of Sciences (2019)</li>
+            <li>dstl/ASTRID Grant (2022)</li>
+            <li>Czech Science Foundation Grant (2018–2021)</li>
+            <li>National Award for Patent, Iran (2007)</li>
+            <li>Best State Award for Undergraduate Teaching (2002)</li>
         </ul>
     </section>
 
     <!-- Professional Service -->
     <section>
-        <h2>Professional Service &amp; Recognition</h2>
+        <h2>Professional Service</h2>
         <ul>
-            <li><strong>Journal Reviewer</strong> (2014–Present): IEEE TIP, IEEE Access, Pattern Recognition, Signal Processing, Information Sciences, Automatica, Optics Letters, Applied Optics, Optics Express.</li>
-            <li><strong>MEAM Deputy Course Director</strong>, Cranfield University (2022–Present)</li>
-            <li><strong>Head, Department of Electrical Engineering</strong>, Azad University of Urmia (2007–2009)</li>
+            <li>Reviewer for: IEEE TIP, IEEE Access, Pattern Recognition, Signal Processing, Automatica, Optics Letters</li>
+            <li>Guest Editor, <em>Electronics</em> (MDPI)</li>
+            <li>MEAM Deputy Course Director, Cranfield University</li>
         </ul>
     </section>
 
-    <!-- Professional Memberships -->
+    <!-- Memberships -->
     <section>
-        <h2>Professional Memberships</h2>
+        <h2>Memberships</h2>
         <ul>
-            <li>Senior Member, IEEE (2022–Present)</li>
-            <li>Senior Member, OPTICA (2022–Present)</li>
-            <li>Associate Fellow, Higher Education Academy (AFHEA) (2022–Present)</li>
+            <li>Senior Member, IEEE</li>
+            <li>Senior Member, OPTICA</li>
+            <li>Associate Fellow, Higher Education Academy (AFHEA)</li>
         </ul>
     </section>
 
-    <!-- Skills & Languages -->
+    <!-- Skills -->
     <section>
         <h2>Skills &amp; Languages</h2>
-        <div class="skills-grid">
-            <div class="skills-col">
-                <strong>Technical Skills</strong><br>
-                MATLAB/Simulink, Python, C++, Wolfram Mathematica, LaTeX<br>
-                Microsoft Office, Teams, Zemax<br>
-                DSP, Image Processing, Moment Theory, Machine Learning, Medical Imaging
+        <div class="two-columns">
+            <div class="col">
+                <strong>Technical:</strong> MATLAB/Python/C++, LaTeX, DSP, Image Processing, Machine Learning
             </div>
-            <div class="skills-col">
-                <strong>Languages</strong><br>
-                English (Advanced, TOEFL iBT 106/120)<br>
-                Persian (Native)<br>
-                Azeri (Mother tongue)<br>
-                Turkish (Fluent)
+            <div class="col">
+                <strong>Languages:</strong> English (fluent), Persian (native), Azeri, Turkish
             </div>
         </div>
     </section>
 
-    <!-- References -->
+    <!-- Contact & References -->
+    <section id="contact">
+        <h2>Contact &amp; References</h2>
+        <p>📧 <strong>barmak.honarvar@ieee.org</strong></p>
+        <p style="margin-top: 0.8rem;"><strong>References available on request:</strong><br>
+        Prof. John Ahmet Erkoyuncu (Cranfield) · Dr. Ali Nabavi (Cranfield) · Prof. Jan Flusser (UTIA, Prague)</p>
+    </section>
+
+    <!-- Media -->
     <section>
-        <h2>References</h2>
+        <h2>Media</h2>
         <ul>
-            <li>Professor John Ahmet Erkoyuncu – Centre for Digital Engineering and Manufacturing, Cranfield University – <a href="mailto:j.a.erkoyuncu@cranfield.ac.uk">j.a.erkoyuncu@cranfield.ac.uk</a></li>
-            <li>Dr. Ali Nabavi – Reader in Energy Systems, Cranfield University – <a href="mailto:s.nabavi@cranfield.ac.uk">s.nabavi@cranfield.ac.uk</a></li>
-            <li>Professor Jan Flusser – Vice Director for Research, UTIA, Prague – <a href="mailto:flusser@utia.cas.cz">flusser@utia.cas.cz</a></li>
+            <li><strong>Interview with Faculti (18 February 2026)</strong> – Publication pending. Follow-ups with Diana Matthews and Gaston Flores have received the response: "It should be live soon."</li>
         </ul>
     </section>
 
